@@ -21,4 +21,5 @@ ENV OPENAI_API_KEY=your_OpenAI_API_key
 EXPOSE 8000
 
 # Set an entry point that runs a shell for interactive mode
-ENTRYPOINT ["/bin/bash"]
+# ENTRYPOINT ["/bin/bash"]
+CMD exec python3 visualizer/app.py
